@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login Request</title>
+    <style>
+        .center {
+        text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <img src="src/myrobot.png" width="400" height="300">
+    </div>
+  <script>
+    // Your JavaScript goes here!
+    let userName = prompt("Please Enter Your Username",'');
+        if (userName === 'Admin'){
+            let pass = prompt('How About Your Password?','');
+            if (pass === 'Admin'){
+                alert('Welcome!');
+                } else if (pass === '' || pass === null){
+                alert('Canceled');    
+                } else{
+                alert('Wrong Password!');
+            }
+        } else if (userName === '' || userName === null){
+        alert('Canceled');    
+        } else{
+        alert("Sorry I don't know you");
+    }
+  </script>
+
+</body>
+</html>
